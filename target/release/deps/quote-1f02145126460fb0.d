@@ -1,0 +1,13 @@
+/Users/yuta/Desktop/programming/Rust/rust_modules/api/target/release/deps/quote-1f02145126460fb0.rmeta: /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/lib.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/ext.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/format.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/ident_fragment.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/to_tokens.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/runtime.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/spanned.rs
+
+/Users/yuta/Desktop/programming/Rust/rust_modules/api/target/release/deps/libquote-1f02145126460fb0.rlib: /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/lib.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/ext.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/format.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/ident_fragment.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/to_tokens.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/runtime.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/spanned.rs
+
+/Users/yuta/Desktop/programming/Rust/rust_modules/api/target/release/deps/quote-1f02145126460fb0.d: /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/lib.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/ext.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/format.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/ident_fragment.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/to_tokens.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/runtime.rs /Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/spanned.rs
+
+/Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/lib.rs:
+/Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/ext.rs:
+/Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/format.rs:
+/Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/ident_fragment.rs:
+/Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/to_tokens.rs:
+/Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/runtime.rs:
+/Users/yuta/.cargo/registry/src/github.com-1ecc6299db9ec823/quote-1.0.9/src/spanned.rs:

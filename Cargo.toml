@@ -1,0 +1,19 @@
+[package]
+build = "build.rs"
+edition = "2018"
+links = "foo"
+name = "all_programming_package"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libc = "0.2.0"
+
+[build-dependencies]
+bindgen = "0.59.1"
+cc = {version = "1.0", features = ["parallel"]}
+[lib]
+crate-type = ["cdylib"]
+name = "rust_api"
+path = "modules/lib.rs"

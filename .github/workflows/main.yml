@@ -1,0 +1,69 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+env:
+    CARGO_TERM_COLOR: always
+jobs:
+    doc:
+        runs-on: ubuntu-latest
+        if: github.event_name == 'push' || github.event.pull_request.merged == true
+
+        steps:
+            - uses: actions/checkout@v2
+            - name: Run doc
+              run: cargo doc --no-deps
+
+            - name: Deploy
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./target/doc/
+    build:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node: ['12', '14', '16']
+                python: [3.8]
+        name: Node ${{ matrix.node }}
+        steps:
+            - uses: actions/checkout@v2
+            - name: Setup Python
+              uses: actions/setup-python@v2
+              with:
+                  python-version: ${{ matrix.python }}
+                  architecture: 'x64'
+            - name: Get Python version
+              run: python -V
+            - name: Install dependencies
+              run: pip install -r requirements.txt
+            - name: Run Python
+              run: python setup.py build_ext --inplace
+            - name: Setup node
+              uses: actions/setup-node@v2
+              with:
+                  node-version: ${{ matrix.node }}
+            - uses: borales/actions-yarn@v2.3.0
+              with:
+                  cmd: install
+            - uses: borales/actions-yarn@v2.3.0
+              with:
+                  cmd: build_git # will run `yarn build` command
+            - uses: borales/actions-yarn@v2.3.0
+              with:
+                  cmd: test # will run `yarn test` command
+            - name: cache node_modules
+              id: node_modules_cache_id
+              uses: actions/cache@v2
+              with:
+                  path: |
+                      node_modules
+                  key: node-v${{ matrix.node-version }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
+            - name: Build
+              run: make -C app/javascript/wasm wasm-build && make rust_build && ls
+            - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+              with:
+                  heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+                  heroku_app_name: ${{secrets.HEROKU_APP}}
+                  heroku_email: ${{secrets.HEROKU_EMAIL}}

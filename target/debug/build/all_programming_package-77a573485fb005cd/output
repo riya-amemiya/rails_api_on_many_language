@@ -1,0 +1,37 @@
+TARGET = Some("x86_64-apple-darwin")
+OPT_LEVEL = Some("0")
+HOST = Some("x86_64-apple-darwin")
+CXX_x86_64-apple-darwin = None
+CXX_x86_64_apple_darwin = None
+HOST_CXX = None
+CXX = None
+CXXFLAGS_x86_64-apple-darwin = None
+CXXFLAGS_x86_64_apple_darwin = None
+HOST_CXXFLAGS = None
+CXXFLAGS = None
+CRATE_CC_NO_DEFAULTS = None
+DEBUG = Some("true")
+CARGO_CFG_TARGET_FEATURE = Some("cmpxchg16b,fxsr,sse,sse2,sse3,ssse3")
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "modules" "-I" "cython" "-Wall" "-Wextra" "-Wall" "-Wextra" "-g" "-O3" "-mtune=native" "-march=native" "-o" "/Users/yuta/Desktop/programming/Rust/rust_modules/api/target/debug/build/all_programming_package-77a573485fb005cd/out/modules/c/c_random.o" "-c" "modules/c/c_random.cpp"
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "modules" "-I" "cython" "-Wall" "-Wextra" "-Wall" "-Wextra" "-g" "-O3" "-mtune=native" "-march=native" "-o" "/Users/yuta/Desktop/programming/Rust/rust_modules/api/target/debug/build/all_programming_package-77a573485fb005cd/out/modules/c/c_cpp.o" "-c" "modules/c/c_cpp.cpp"
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "modules" "-I" "cython" "-Wall" "-Wextra" "-Wall" "-Wextra" "-g" "-O3" "-mtune=native" "-march=native" "-o" "/Users/yuta/Desktop/programming/Rust/rust_modules/api/target/debug/build/all_programming_package-77a573485fb005cd/out/modules/c/c_hello.o" "-c" "modules/c/c_hello.cpp"
+running: "c++" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-g" "-fno-omit-frame-pointer" "-m64" "-arch" "x86_64" "-I" "modules" "-I" "cython" "-Wall" "-Wextra" "-Wall" "-Wextra" "-g" "-O3" "-mtune=native" "-march=native" "-o" "/Users/yuta/Desktop/programming/Rust/rust_modules/api/target/debug/build/all_programming_package-77a573485fb005cd/out/modules/c/c_math.o" "-c" "modules/c/c_math.cpp"
+exit status: 0
+exit status: 0
+exit status: 0
+exit status: 0
+AR_x86_64-apple-darwin = None
+AR_x86_64_apple_darwin = None
+HOST_AR = None
+AR = None
+running: "ar" "cq" "/Users/yuta/Desktop/programming/Rust/rust_modules/api/target/debug/build/all_programming_package-77a573485fb005cd/out/libc_lib.a" "/Users/yuta/Desktop/programming/Rust/rust_modules/api/target/debug/build/all_programming_package-77a573485fb005cd/out/modules/c/c_hello.o" "/Users/yuta/Desktop/programming/Rust/rust_modules/api/target/debug/build/all_programming_package-77a573485fb005cd/out/modules/c/c_math.o" "/Users/yuta/Desktop/programming/Rust/rust_modules/api/target/debug/build/all_programming_package-77a573485fb005cd/out/modules/c/c_random.o" "/Users/yuta/Desktop/programming/Rust/rust_modules/api/target/debug/build/all_programming_package-77a573485fb005cd/out/modules/c/c_cpp.o"
+exit status: 0
+running: "ar" "s" "/Users/yuta/Desktop/programming/Rust/rust_modules/api/target/debug/build/all_programming_package-77a573485fb005cd/out/libc_lib.a"
+exit status: 0
+cargo:rustc-link-lib=static=c_lib
+cargo:rustc-link-search=native=/Users/yuta/Desktop/programming/Rust/rust_modules/api/target/debug/build/all_programming_package-77a573485fb005cd/out
+CXXSTDLIB_x86_64-apple-darwin = None
+CXXSTDLIB_x86_64_apple_darwin = None
+HOST_CXXSTDLIB = None
+CXXSTDLIB = None
+cargo:rustc-link-lib=c++
