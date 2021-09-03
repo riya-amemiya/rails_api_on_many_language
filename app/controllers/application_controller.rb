@@ -23,16 +23,16 @@ module Rust
 end
 
 class ApplicationController < ActionController::API
-  def data(name)
+  def data(v)
     day = Date.today
     time = DateTime.now
     return{
+            version: v,
             url: {
               controller: params[:controller],
               action: params[:action],
             },
             ip: request.remote_ip,
-            name: name,
             time: {
               hour: time.hour,
               minute: time.minute,
