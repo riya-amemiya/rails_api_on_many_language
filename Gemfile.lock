@@ -177,7 +177,7 @@ DEPENDENCIES
   rails (~> 6.1.4, >= 6.1.4.1)
   rails_12factor
   spring
-  sqlite3 (~> 1.4)
+  sqlite3
   tzinfo-data
 
 RUBY VERSION
