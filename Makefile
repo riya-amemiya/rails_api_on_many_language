@@ -5,15 +5,17 @@ RUST_MODULES = $(INCLUDE_PATH)c_hello.rs $(INCLUDE_PATH)c_math.rs $(INCLUDE_PATH
 .SUFFIXES: .hpp .rs
 vpath %.h $(RUST_PATH)
 vpath %.hpp $(RUST_PATH)
-.PHONY: cpp
-cpp:
-	dpkg -l
 .PHONY: rust_build
+
 rust_build:
 	rm modules/include/*.rs
 	cargo install bindgen
 	make bindgen
 	cargo build --release -v
+.PHONY: cpp
+cpp:
+	dpkg -l
+
 
 .PHONY: build
 build:
